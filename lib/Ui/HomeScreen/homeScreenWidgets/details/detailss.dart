@@ -32,7 +32,6 @@ class _MovieDetailsState extends State<MovieDetails> {
         backgroundColor: Colors.black,
         appBar: AppBar(
           iconTheme: const IconThemeData(color: Colors.white, size: 30),
-          // backgroundColor: Color(0xEF282A28),
           backgroundColor: Colors.black12,
           //elevation: 10,
           title: Text(

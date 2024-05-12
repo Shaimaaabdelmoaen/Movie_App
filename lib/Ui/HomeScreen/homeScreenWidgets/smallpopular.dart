@@ -32,7 +32,6 @@ class _SmallState extends State<Small> {
           width: 140,
           height: 210,
           child: Image.network(
-            // "${Constant.imagePathe}${rec.posterPath}",
             "${Constant.imagePathe}${widget.results.posterPath}",
 
             alignment: Alignment.bottomLeft,

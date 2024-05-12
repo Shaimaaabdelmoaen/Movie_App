@@ -13,7 +13,7 @@ class Browse extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Text("Browse Category ",
-                textAlign: TextAlign.start,
+                //textAlign: TextAlign.start,
                 style: TextStyle(
                   fontSize: 22,
                   fontFamily: "Inter",

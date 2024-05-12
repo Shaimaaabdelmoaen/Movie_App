@@ -35,12 +35,14 @@ class MovieList extends StatelessWidget {
               if (snapshot.hasError || snapshot.data == null) {
                 return Center(
                     child: Text(
-                        snapshot.data?.message ?? snapshot.error.toString()));
+                        snapshot.data?.message ?? snapshot.error.toString()),
+                );
               }
               var movieList = snapshot.data?.results;
               return Flex(
                 direction: Axis.vertical,
-                children: [ Expanded(
+                children: [
+                  Expanded(
                   child: ListView.builder(
                       itemBuilder: (context, index) =>
                           MoviesWidget(

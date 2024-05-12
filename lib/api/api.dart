@@ -16,7 +16,7 @@ class Api {
 
 
 
-  static Future<List<Details>> getPopularResponse() async {
+  static Future<List<Details>> getPopularResponse() async { //home api Popular
     var response = await http.get(Uri.parse(popular));
     if (response.statusCode == 200) {
       final decodData = json.decode(response.body)['results'] as List;
@@ -30,7 +30,7 @@ class Api {
 
 
 
-  static Future<List<Details>> newReleasesResponse() async {
+  static Future<List<Details>> newReleasesResponse() async {  //home api Upcoming
     var response = await http.get(Uri.parse(newReleases));
     if (response.statusCode == 200) {
       final decodData = json.decode(response.body)['results'] as List;
@@ -43,7 +43,7 @@ class Api {
   }
 
 
-  static Future<List<Details>> recommendedResponse() async {
+  static Future<List<Details>> recommendedResponse() async {  //home api Top Rated
     var response = await http.get(Uri.parse(recomended));
     if (response.statusCode == 200) {
       final decodData = json.decode(response.body)['results'] as List;
@@ -56,7 +56,7 @@ class Api {
   }
 
 
-  static Future<List<Details>> moreLike(String? id) async {
+  static Future<List<Details>> moreLike(String? id) async {  //details //api similar
 
     final likeThis="https://api.themoviedb.org/3/movie/$id/similar?api_key=${Constant.apiKey}";
     var response = await http.get(Uri.parse(likeThis));

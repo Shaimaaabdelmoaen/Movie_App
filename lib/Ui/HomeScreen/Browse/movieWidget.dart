@@ -8,7 +8,8 @@ class MoviesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(
+        children: [
       CachedNetworkImage(
         height: 300,
         width: 240,
@@ -45,7 +46,9 @@ class MoviesWidget extends StatelessWidget {
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+          Row(
+              //mainAxisAlignment: MainAxisAlignment.end,
+              children: [
             const Icon(
               Icons.star,
               color: Color(0xFFFBAF22),
